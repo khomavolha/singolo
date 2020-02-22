@@ -1,0 +1,400 @@
+html {
+	font-size: 10px;
+}
+
+
+
+body {
+	margin: 0;
+	height: 100vh;
+	width: 1020px;
+	margin: 0 auto;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	font-family: 'Lato Regular', sans-serif;
+	font-size: 1.6rem;
+}
+
+
+
+/*ШАПКА*/
+.header {
+	width: 100%;
+	background: #2d303a;
+	height: 89px;
+	display: block;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	margin: 0;
+	display: block;
+	padding-left: 41px;
+	padding-top: 4px;
+	font-weight: 500;
+	line-height: 1;
+	letter-spacing: -.55px;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 2.5rem;
+	display: flex;
+	align-items: center;
+	color: white;
+
+}
+
+.navbar {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 40px;
+
+}
+
+header ul {
+	padding: 0;
+	padding-top: 10px;
+	margin: 0;
+	display: flex;
+	list-style: none;
+	align-items: center;
+}
+
+header ul li {
+	position: relative;
+
+
+}
+
+
+
+header ul li a.ar:after {
+	content: "";
+	background-color: lightgrey;
+	width: 2px;
+	height: 2px;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	right: -16px;
+	opacity: 0.5;
+	transform: translateY(-50%);
+
+}
+
+header ul li a {
+	color: white;
+
+	padding-left: 29px;
+	text-decoration: none;
+
+	font-size: 1.2rem;
+	font-weight: 500;
+	font-stretch: semi-condensed;
+	transition: color .25s;
+
+}
+
+header ul li a:hover {
+	color: #f06c64;
+}
+
+
+.line {
+	background: #323746;
+	height: 6px;
+}
+
+
+/*КОНЕЦ ШАПКИ*/
+
+
+
+/*ТЕЛЕФОННЫЙ СЛАЙДЕР*/
+.telephones {
+	height: 514px;
+	background-color: aquamarine;
+	position: relative;
+	background-color: #f06c64;
+
+	display: grid;
+	grid-template-columns: 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+
+	grid-template-areas:
+		"arrowLeft telephone telephone telephone . telephone2 telephone2 telephone2 telephone2 telephone2 telephone2 arrowRight ";
+	grid-column-gap: 20px;
+	padding: 40px;
+
+
+}
+
+
+
+
+
+
+
+
+.telephone1 {
+	grid-area: telephone;
+	align-self: center;
+	cursor: pointer;
+	padding-bottom: 5px;
+	margin-left: -8px;
+
+}
+
+
+
+
+.telephone2 {
+	grid-area: telephone2;
+	align-self: center;
+	cursor: pointer;
+	padding-bottom: 7px;
+	margin-left: -15px;
+
+}
+
+.arrowLeft {
+	grid-area: arrowLeft;
+	align-self: center;
+	justify-self: start;
+	padding-left: 2px;
+	padding-bottom: 5px;
+}
+
+.arrowRight {
+	grid-area: arrowRight;
+	align-self: center;
+	justify-self: end;
+	padding-bottom: 5px;
+}
+
+.arrowRight:hover {
+	cursor: pointer;
+
+	-webkit-filter: drop-shadow(1px 1px 1px white);
+	filter: drop-shadow(1px 1px 1px white);
+
+}
+
+
+.arrowLeft:hover {
+	cursor: pointer;
+
+	-webkit-filter: drop-shadow(1px 1px 1px white);
+	filter: drop-shadow(1px 1px 1px white);
+
+}
+
+
+.line2 {
+	width: 1020px;
+	height: 6px;
+	background-color: #ea676b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*ТЕЛЕФОННЫЙ СЛАЙДЕР*/
+
+
+/*НАШИ СЕРВИСЫ*/
+.ourServices {
+	display: grid;
+	height: 385px;
+	grid-template-columns: 60px 220px 60px 220px 60px 220px;
+	grid-template-rows: 20px 76px 100px 100px;
+	grid-template-areas:
+		"zero zero zero zero zero zero"
+		"desc desc desc desc desc desc"
+		"image1 one image3 two image5 three"
+		"image2 four image4 five image6 six";
+	grid-column-gap: 20px;
+	grid-row-gap: 26px;
+
+	padding: 40px;
+	background-color: #f2f2f2;
+	align-items: end;
+	padding-top: 70px;
+
+}
+
+
+.name {
+
+	grid-area: zero;
+	align-self: start;
+	line-height: 18px;
+	color: #666d89;
+
+	font-family: 'Lato Black', sans-serif;
+	font-size: 3rem;
+	font-weight: 400;
+
+
+
+
+
+
+
+}
+
+.description {
+	grid-area: desc;
+	align-self: start;
+	justify-self: start;
+	line-height: 30px;
+	color: #767e9e;
+	text-align: justify;
+	margin-top: -1px;
+
+	font-size: 1.8rem;
+	font-weight: 100;
+
+	letter-spacing: -.36px;
+
+
+
+
+
+
+
+
+}
+
+.image1,
+.image3,
+.image5 {
+
+	margin-top: 1.5px;
+}
+
+.image2,
+.image4,
+.image6 {
+	margin-top: -1px;
+}
+
+.item1 {
+	grid-area: one;
+	align-self: start;
+
+}
+
+.image1 {
+	grid-area: image1;
+	align-self: start;
+	margin-left: 1.5px;
+}
+
+.item2 {
+	grid-area: two;
+	align-self: start;
+}
+
+.image2 {
+	grid-area: image2;
+	align-self: start;
+	margin-left: 1.5px;
+}
+
+.item3 {
+	grid-area: three;
+	align-self: start;
+
+}
+
+.image3 {
+	grid-area: image3;
+	align-self: start;
+}
+
+.item4 {
+	grid-area: four;
+	align-self: start;
+}
+
+.image4 {
+	grid-area: image4;
+	align-self: start;
+}
+
+.item5 {
+	grid-area: five;
+	align-self: start;
+}
+
+.image5 {
+	grid-area: image5;
+	align-self: start;
+}
+
+.item6 {
+	grid-area: six;
+	align-self: start;
+}
+
+.image6 {
+	grid-area: image6;
+	align-self: start;
+}
+
+.titleServ {
+    
+	font-size: 18px;
+	line-height: 18px;
+	color: #666d89;
+	font-family: 'Lato Regular', sans-serif;
+	font-weight: 900;
+	margin: 0;
+    margin-top: 2px;
+	text-align: justify;
+	padding: 0px 0px 8px 0px;
+
+}
+
+.titleServ.a,.titleServ.b,.titleServ.c {
+	margin-top:-1px;
+    letter-spacing: 0.2px;
+}
+
+.textServ {
+	font-size: 1.2rem;
+	font-family: 'Lato Regular', sans-serif;
+	color: #767e9e;
+	font-weight: 400;
+	margin: 0;
+    margin-top: 0px;
+	text-align: justify;
+	line-height: 1.85em;
+	
+	max-width: 299px;
+	max-height: 93px;
+	overflow: hidden;
+}
+
+.line3 {
+	width: 1020px;
+	height: 6px;
+	background-color: #ffffff;
+}
+
+/*НАШИ СЕРВИСЫ - КОНЕЦ*/
