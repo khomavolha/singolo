@@ -9,9 +9,6 @@ html {
 
 
 
-
-
-
 body {
 	margin: 0;
 	height: 100vh;
@@ -32,7 +29,11 @@ body {
 	background: #2d303a;
 	height: 89px;
 	display: block;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 }
 
@@ -47,14 +48,22 @@ body {
 	text-transform: uppercase;
 	cursor: pointer;
 	font-size: 2.5rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	color: white;
 
 }
 
 .navbar {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
 	justify-content: flex-end;
 	padding-right: 40px;
 
@@ -64,8 +73,12 @@ header ul {
 	padding: 0;
 	padding-top: 5px;
 	margin: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	list-style: none;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 }
 
@@ -88,6 +101,7 @@ header ul li a.ar:after {
 	top: 50%;
 	right: -16px;
 	opacity: 0.5;
+	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 
 }
@@ -101,6 +115,7 @@ header ul li a {
 	font-size: 1.2rem;
 	font-weight: 500;
 	font-stretch: semi-condensed;
+	-webkit-transition: color .25s;
 	transition: color .25s;
 
 }
@@ -147,6 +162,7 @@ header ul li a:hover {
 
 .telephone1 {
 	grid-area: telephone;
+	-ms-flex-item-align: center;
 	align-self: center;
 	cursor: pointer;
 	padding-bottom: 5px;
@@ -159,6 +175,7 @@ header ul li a:hover {
 
 .telephone2 {
 	grid-area: telephone2;
+	-ms-flex-item-align: center;
 	align-self: center;
 	cursor: pointer;
 	padding-bottom: 7px;
@@ -168,6 +185,7 @@ header ul li a:hover {
 
 .arrowLeft {
 	grid-area: arrowLeft;
+	-ms-flex-item-align: center;
 	align-self: center;
 	justify-self: start;
 	padding-left: 2px;
@@ -176,6 +194,7 @@ header ul li a:hover {
 
 .arrowRight {
 	grid-area: arrowRight;
+	-ms-flex-item-align: center;
 	align-self: center;
 	justify-self: end;
 	padding-bottom: 5px;
@@ -240,6 +259,8 @@ header ul li a:hover {
 
 	padding: 40px;
 	background-color: #f2f2f2;
+	-webkit-box-align: end;
+	-ms-flex-align: end;
 	align-items: end;
 	padding-top: 70px;
 
@@ -249,6 +270,7 @@ header ul li a:hover {
 .name {
 
 	grid-area: zero;
+	-ms-flex-item-align: start;
 	align-self: start;
 	line-height: 20px;
 	color: #666d89;
@@ -267,6 +289,7 @@ header ul li a:hover {
 
 .description {
 	grid-area: desc;
+	-ms-flex-item-align: start;
 	align-self: start;
 	justify-self: start;
 	line-height: 30px;
@@ -303,65 +326,77 @@ header ul li a:hover {
 
 .item1 {
 	grid-area: one;
+	-ms-flex-item-align: start;
 	align-self: start;
 
 }
 
 .image1 {
 	grid-area: image1;
+	-ms-flex-item-align: start;
 	align-self: start;
 	margin-left: 1.5px;
 }
 
 .item2 {
 	grid-area: two;
+	-ms-flex-item-align: start;
 	align-self: start;
 }
 
 .image2 {
 	grid-area: image2;
+	-ms-flex-item-align: start;
 	align-self: start;
 	margin-left: 1.5px;
 }
 
 .item3 {
 	grid-area: three;
+	-ms-flex-item-align: start;
 	align-self: start;
 
 }
 
 .image3 {
 	grid-area: image3;
+	-ms-flex-item-align: start;
 	align-self: start;
 }
 
 .item4 {
 	grid-area: four;
+	-ms-flex-item-align: start;
 	align-self: start;
 }
 
 .image4 {
 	grid-area: image4;
+	-ms-flex-item-align: start;
 	align-self: start;
 }
 
 .item5 {
 	grid-area: five;
+	-ms-flex-item-align: start;
 	align-self: start;
 }
 
 .image5 {
 	grid-area: image5;
+	-ms-flex-item-align: start;
 	align-self: start;
 }
 
 .item6 {
 	grid-area: six;
+	-ms-flex-item-align: start;
 	align-self: start;
 }
 
 .image6 {
 	grid-area: image6;
+	-ms-flex-item-align: start;
 	align-self: start;
 }
 
@@ -462,12 +497,14 @@ header ul li a:hover {
 }
 
 .aroundTag {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	border: 1px solid #666d89;
 	padding: 2px 7px 4px;
 	border-radius: 5px;
 	margin-right: 7px;
 	cursor: pointer;
+	-webkit-transition: all, .5s;
 	transition: all, .5s;
 
 }
@@ -478,11 +515,20 @@ header ul li a:hover {
 }
 
 #containerFlex1 {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 601px;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row ltr;
 	flex-direction: row ltr;
+	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
+	-ms-flex-line-pack: justify;
 	align-content: space-between;
 	overflow: hidden;
 }
@@ -500,6 +546,8 @@ header ul li a:hover {
 	padding-top: 43px;
 	display: grid;
 	grid-template-columns: 300px 300px 300px;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
 	justify-content: space-between;
 
 
@@ -537,6 +585,7 @@ header ul li a:hover {
 
 .light {
 	cursor: pointer;
+	-webkit-transition: background-color, .3s;
 	transition: background-color, .3s;
 
 }
@@ -685,6 +734,26 @@ p.ssilka {
 
 }
 
+.inputName::-webkit-input-placeholder {
+    color: #f48c8f;
+    font-size: 1.2rem;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.inputName:-ms-input-placeholder {
+    color: #f48c8f;
+    font-size: 1.2rem;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+
+}
+
 .inputName::placeholder {
     color: #f48c8f;
     font-size: 1.2rem;
@@ -714,7 +783,43 @@ p.ssilka {
     background-color: white;    
 }
 
+.inputMail::-webkit-input-placeholder {
+    color: #f48c8f;
+    font-size: 1.2rem;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.inputMail:-ms-input-placeholder {
+    color: #f48c8f;
+    font-size: 1.2rem;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
 .inputMail::placeholder {
+    color: #f48c8f;
+    font-size: 1.2rem;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.inputSub::-webkit-input-placeholder {
+    color: #f48c8f;
+    font-size: 1.2rem;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+}
+
+.inputSub:-ms-input-placeholder {
     color: #f48c8f;
     font-size: 1.2rem;
     line-height: 22px;
@@ -735,6 +840,28 @@ p.ssilka {
 .inputTextarea {
     height: 187px;
     resize: none;
+}
+
+.inputTextarea::-webkit-input-placeholder {
+    color: #f48c8f;
+    font-size: 1.2rem;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 400;
+    letter-spacing: -0.003rem;
+
+
+}
+
+.inputTextarea:-ms-input-placeholder {
+    color: #f48c8f;
+    font-size: 1.2rem;
+    line-height: 22px;
+    font-family: "Lato";
+    font-weight: 400;
+    letter-spacing: -0.003rem;
+
+
 }
 
 .inputTextarea::placeholder {
@@ -771,8 +898,15 @@ p.ssilka {
     padding: 30px 41px;
     height: 76px;
     background-color: #2d303a;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
