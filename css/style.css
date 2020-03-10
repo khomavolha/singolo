@@ -924,8 +924,10 @@ p.ssilka {
     margin-left: 4.5px;
 }
 
-
-
+.icons:hover{
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: white;}
 
 
 
